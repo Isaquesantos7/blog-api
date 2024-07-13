@@ -16,6 +16,8 @@ public class Blog implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String titulo;
+
+    @Column(length = 1000)
     private String descricao;
 
     public Blog() {}
